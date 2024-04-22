@@ -1,0 +1,28 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortened URL</title>
+    <link rel="stylesheet" href="/static/style2.css">
+</head>
+<body>
+    <div class="center">
+    <h1>Shortened URL:</h1>
+    <p>The original URL has been successfully shortened:</p>
+    <!-- <p>The shortened URL is: <a id="shortenedURL" href="/{{ short_url }}">{{ short_url }}</a></p> -->
+    <p>The shortened URL is: <a id="shortenedURL" ></a></p>
+    <div id="backURL" data-backurl = "{{short_url}}" style="display: hidden;" ></div>
+    </div>
+    <script>
+        const shortenedURL = document.getElementById("shortenedURL");
+        const backURL = document.getElementById("backURL").getAttribute("data-backurl");
+        let x = window.location.hostname;
+        shortenedURL.setAttribute("href", `/${backURL}`);
+        shortenedURL.innerHTML= `https://${x}/${backURL}`;
+
+    </script>
+    
+</body>
+</html>

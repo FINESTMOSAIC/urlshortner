@@ -1,0 +1,28 @@
+body{
+    overflow: hidden;
+    max-height: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right top, #142850, #172e56, #1a345b, #1d3b61, #214166, #21486c, #214e73, #215579, #1b5e81, #146888, #0e718e, #0c7b93);
+}
+
+.center{
+
+background: rgba(0, 255, 242, 0.25);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(0, 255, 242, 0.45);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;;
+}
+
+form{
+    margin-bottom: 21.4px;
+}
