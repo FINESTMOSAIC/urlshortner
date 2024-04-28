@@ -77,4 +77,4 @@ if __name__ == '__main__':
     try:
         app.run(debug=True)
     except:
-        print("krishna is noob")
+        print("Error occured    ")
